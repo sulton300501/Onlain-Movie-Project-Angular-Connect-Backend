@@ -21,7 +21,9 @@ import { EditGenresComponent } from './Genres/edit-genres/edit-genres.component'
 import { EditActorComponent } from './Actor/edit-actor/edit-actor.component';
 import { EditMoviesComponent } from './Movies/edit-movies/edit-movies.component';
 import { EditTeatherComponent } from './Teather/edit-teather/edit-teather.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { GenreFormComponent } from './Genres/genre-form/genre-form.component';
+import { SearchMovieComponent } from './Genres/search-movie/search-movie.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { EditTeatherComponent } from './Teather/edit-teather/edit-teather.compon
                   EditActorComponent,
                   EditMoviesComponent,
                   EditTeatherComponent,
+                  GenreFormComponent,
+                  SearchMovieComponent,
 
    
   ],
@@ -51,7 +55,9 @@ import { EditTeatherComponent } from './Teather/edit-teather/edit-teather.compon
     AppRoutingModule,
     HttpClientModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
+
    
   ],
   providers: [

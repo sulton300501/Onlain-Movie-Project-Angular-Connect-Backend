@@ -13,6 +13,7 @@ import { EditGenresComponent } from './Genres/edit-genres/edit-genres.component'
 import { EditActorComponent } from './Actor/edit-actor/edit-actor.component';
 import { EditMoviesComponent } from './Movies/edit-movies/edit-movies.component';
 import { EditTeatherComponent } from './Teather/edit-teather/edit-teather.component';
+import { SearchMovieComponent } from './Genres/search-movie/search-movie.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -28,11 +29,15 @@ const routes: Routes = [
   {path:"movies",component:IndexMoviesComponent},
   {path:"movies/create",component:CreateMovieComponent},
   {path:"movies/edit/:id",component:EditMoviesComponent},
+  {path:"movies/search",component:SearchMovieComponent},
+
+
 
   {path:"movietheaters",component:IndexTeatherComponent},
   {path:"movietheaters/create",component:CreateTeatherComponent},
   {path:"movietheaters/edit/:id",component:EditTeatherComponent},
   
+
 
   {path:"**",redirectTo:""}
 ];

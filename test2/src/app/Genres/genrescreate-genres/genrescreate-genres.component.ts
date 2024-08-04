@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CreteGenreDTO } from '../Genres.model';
+
+
+
+
 
 @Component({
   selector: 'app-genrescreate-genres',
@@ -8,21 +14,16 @@ import { Router } from '@angular/router';
 })
 export class GenrescreateGenresComponent implements OnInit {
 
+constructor(private router:Router){}
 
-
-  SaveChanges(){
-    this.router.navigate(['/genres'])
+SaveChanges(createGenreDTO : CreteGenreDTO){
+console.log(createGenreDTO)
+this.router.navigate(['/genres'])
   }
 
-
-
-  constructor(private router:Router){
-
+  ngOnInit(): void {
+    
   }
-
-ngOnInit(): void {
-  
-}
 
 
 }
